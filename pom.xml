@@ -16,6 +16,7 @@
       <module>dubbo-user</module>
       <module>dubbo-user-api</module>
       <module>ssm-scaffold</module>
+      <module>io</module>
   </modules>
   <packaging>pom</packaging>
 
