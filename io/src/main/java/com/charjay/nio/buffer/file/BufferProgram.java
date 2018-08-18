@@ -1,4 +1,4 @@
-package com.charjay.nio.buffer;
+package com.charjay.nio.buffer.file;
 
 import java.io.FileInputStream;
 import java.nio.Buffer;
@@ -9,7 +9,7 @@ public class BufferProgram {
     public static void main(String args[]) throws Exception {  
     	
     	//这用用的是文件IO处理
-        FileInputStream fin = new FileInputStream("E:/GP_WORKSPACE/test.txt");
+        FileInputStream fin = new FileInputStream("E:/io.txt");
         //创建文件的操作管道
         FileChannel fc = fin.getChannel();
         
@@ -27,8 +27,9 @@ public class BufferProgram {
   
         //判断有没有可读数据
         while (buffer.remaining() > 0) {  
-            byte b = buffer.get();  
-            // System.out.print(((char)b));  
+            byte b = buffer.get();
+//            String data=new String(b,"");
+             System.out.print("data="+((char)b));
         }  
         output("调用get()", buffer);  
   
@@ -50,6 +51,6 @@ public class BufferProgram {
         System.out.print("position: " + buffer.position() + ", ");
         //锁定值，flip，数据操作范围索引只能在position - limit 之间
         System.out.println("limit: " + buffer.limit());  
-        System.out.println();  
+        System.out.println("=============");
     }  
 }  

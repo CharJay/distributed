@@ -5,12 +5,13 @@ import java.io.FileInputStream;
 import java.io.InputStreamReader;
 
 /**
- * BIO读取数据，一行一行的读取
+ * BIO读取数据，从一个阻塞的流中，一行一行的读取
+ * io.txt的内容：随便输入4行
  */
 public class ReadFile {
 	public static void main(String[] args) {
 		try{
-			FileInputStream input = new FileInputStream("f://info.txt");
+			FileInputStream input = new FileInputStream("e://io.txt");
 			BufferedReader reader = new BufferedReader(new InputStreamReader(input));
 			String nameLine = reader.readLine();
 			String ageLine = reader.readLine();
