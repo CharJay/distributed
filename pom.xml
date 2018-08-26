@@ -11,12 +11,9 @@
 	  <module>zookeeper</module>
 	  <module>webservice-restful</module>
 	  <module>serialize</module>
-      <module>dubbo-order</module>
-      <module>dubbo-order-api</module>
-      <module>dubbo-user</module>
-      <module>dubbo-user-api</module>
-      <module>ssm-scaffold</module>
       <module>io</module>
+      <module>netty-catalina</module>
+      <module>netty-chat</module>
   </modules>
   <packaging>pom</packaging>
 

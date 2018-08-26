@@ -22,7 +22,7 @@ public class AIOServer {
     private final int port;  
   
     public static void main(String args[]) {  
-        int port = 8000;  
+        int port = 8080;
         new AIOServer(port);  
     }  
   
@@ -42,9 +42,10 @@ public class AIOServer {
             AsynchronousChannelGroup threadGroup = AsynchronousChannelGroup.withCachedThreadPool(executorService, 1);  
             
             //Asynchronous异步  
-            //NIO   ServerSocketChannel  
-            //BIO   ServerSocket   有那么一点点像
-            
+            //BIO   ServerSocket
+            //NIO   ServerSocketChannel  有那么一点点像
+            //AIO   AsynchronousServerSocketChannel
+
             //同样的，也是先把高速公路修通
             final AsynchronousServerSocketChannel server = AsynchronousServerSocketChannel.open(threadGroup); 
             

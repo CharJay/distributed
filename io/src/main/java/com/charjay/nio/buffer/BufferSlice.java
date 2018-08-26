@@ -2,6 +2,9 @@ package com.charjay.nio.buffer;
 
 import java.nio.ByteBuffer;
 
+/**
+ * 分片
+ */
 public class BufferSlice {  
     static public void main( String args[] ) throws Exception {  
         ByteBuffer buffer = ByteBuffer.allocate( 10 );  

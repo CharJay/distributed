@@ -2,6 +2,9 @@ package com.charjay.nio.buffer;
 
 import java.nio.ByteBuffer;
 
+/**
+ * 缓冲区分配
+ */
 public class BufferWrap {  
     
     public void myMethod() {  
@@ -11,5 +14,5 @@ public class BufferWrap {
         // 包装一个现有的数组  
         byte array[] = new byte[10];  
         ByteBuffer buffer2 = ByteBuffer.wrap( array );
-    } 
+    }
 }

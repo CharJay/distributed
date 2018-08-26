@@ -2,6 +2,9 @@ package com.charjay.nio.buffer;
 
 import java.nio.IntBuffer;
 
+/**
+ * 基础操作
+ */
 public class TestIntBuffer {
 	public static void main(String[] args) {  
         // 分配新的int缓冲区，参数为缓冲区容量  

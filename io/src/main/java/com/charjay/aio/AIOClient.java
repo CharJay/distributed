@@ -85,7 +85,7 @@ public class AIOClient {
     			public void run(){
     				try{
     					latch.await();
-    					new AIOClient().connect("localhost",8000);
+    					new AIOClient().connect("localhost",8080);
     				}catch(Exception e){
     					
     				}
