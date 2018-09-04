@@ -1,15 +1,11 @@
-package javax.core.common.config;
+package com.charjay.config;
 
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.Map;
-import java.util.Properties;
-import java.util.Set;
+import java.util.*;
 
 /**
  * 加载自定义配置
  */
-public class CustomConfig{
+public class CustomConfig {
 	
 	private final static String PLACEHOLDER_START = "${";
 	
@@ -149,8 +145,7 @@ public class CustomConfig{
       
     /** 
      * 解析占位符具体操作 
-     * @param property 
-     * @return 
+     * @return
      */  
     private String resolvePlaceHolder(Properties prots,String value) {  
         if ( value.indexOf( PLACEHOLDER_START ) < 0 ) {  
@@ -186,8 +181,7 @@ public class CustomConfig{
 
     /** 
      * 获得系统属性 当然 你可以选择从别的地方获取值 
-     * @param systemPropertyName 
-     * @return 
+     * @return
      */  
     private String extractFromSystem(Properties prots,String key) {  
         try {  
