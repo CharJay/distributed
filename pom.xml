@@ -6,7 +6,7 @@
   <artifactId>distributed</artifactId>
   <version>1.0-SNAPSHOT</version>
   <modules>
-	  <module>rmi</module>
+	  <module>rpc</module>
 	  <module>scoket</module>
 	  <module>zookeeper</module>
 	  <module>webservice-restful</module>
@@ -15,6 +15,8 @@
       <module>netty-catalina</module>
       <module>netty-chat</module>
       <module>netty-rpc</module>
+      <module>activemq</module>
+      <module>redis</module>
   </modules>
   <packaging>pom</packaging>
 

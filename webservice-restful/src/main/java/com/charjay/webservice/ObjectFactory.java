@@ -24,8 +24,10 @@ import javax.xml.namespace.QName;
 @XmlRegistry
 public class ObjectFactory {
 
+    private final static QName _SayHello2_QNAME = new QName("http://webservice.charjay.com/", "sayHello2");
     private final static QName _SayHelloResponse_QNAME = new QName("http://webservice.charjay.com/", "sayHelloResponse");
     private final static QName _SayHello_QNAME = new QName("http://webservice.charjay.com/", "sayHello");
+    private final static QName _SayHello2Response_QNAME = new QName("http://webservice.charjay.com/", "sayHello2Response");
 
     /**
      * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: com.charjay.webservice
@@ -43,11 +45,52 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link SayHello2Response }
+     * 
+     */
+    public SayHello2Response createSayHello2Response() {
+        return new SayHello2Response();
+    }
+
+    /**
+     * Create an instance of {@link SayHello2 }
+     * 
+     */
+    public SayHello2 createSayHello2() {
+        return new SayHello2();
+    }
+
+    /**
      * Create an instance of {@link SayHelloResponse }
      * 
      */
     public SayHelloResponse createSayHelloResponse() {
         return new SayHelloResponse();
+    }
+
+    /**
+     * Create an instance of {@link SayHelloVo }
+     * 
+     */
+    public SayHelloVo createSayHelloVo() {
+        return new SayHelloVo();
+    }
+
+    /**
+     * Create an instance of {@link SayHelloParam }
+     * 
+     */
+    public SayHelloParam createSayHelloParam() {
+        return new SayHelloParam();
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link SayHello2 }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://webservice.charjay.com/", name = "sayHello2")
+    public JAXBElement<SayHello2> createSayHello2(SayHello2 value) {
+        return new JAXBElement<SayHello2>(_SayHello2_QNAME, SayHello2 .class, null, value);
     }
 
     /**
@@ -66,6 +109,15 @@ public class ObjectFactory {
     @XmlElementDecl(namespace = "http://webservice.charjay.com/", name = "sayHello")
     public JAXBElement<SayHello> createSayHello(SayHello value) {
         return new JAXBElement<SayHello>(_SayHello_QNAME, SayHello.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link SayHello2Response }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://webservice.charjay.com/", name = "sayHello2Response")
+    public JAXBElement<SayHello2Response> createSayHello2Response(SayHello2Response value) {
+        return new JAXBElement<SayHello2Response>(_SayHello2Response_QNAME, SayHello2Response.class, null, value);
     }
 
 }

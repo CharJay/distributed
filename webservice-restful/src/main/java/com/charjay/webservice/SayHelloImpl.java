@@ -28,6 +28,21 @@ public interface SayHelloImpl {
      * 
      * @param arg0
      * @return
+     *     returns com.charjay.webservice.SayHelloVo
+     */
+    @WebMethod
+    @WebResult(targetNamespace = "")
+    @RequestWrapper(localName = "sayHello2", targetNamespace = "http://webservice.charjay.com/", className = "com.charjay.webservice.SayHello2")
+    @ResponseWrapper(localName = "sayHello2Response", targetNamespace = "http://webservice.charjay.com/", className = "com.charjay.webservice.SayHello2Response")
+    @Action(input = "http://webservice.charjay.com/SayHelloImpl/sayHello2Request", output = "http://webservice.charjay.com/SayHelloImpl/sayHello2Response")
+    public SayHelloVo sayHello2(
+            @WebParam(name = "arg0", targetNamespace = "")
+                    SayHelloParam arg0);
+
+    /**
+     * 
+     * @param arg0
+     * @return
      *     returns java.lang.String
      */
     @WebMethod
@@ -36,7 +51,7 @@ public interface SayHelloImpl {
     @ResponseWrapper(localName = "sayHelloResponse", targetNamespace = "http://webservice.charjay.com/", className = "com.charjay.webservice.SayHelloResponse")
     @Action(input = "http://webservice.charjay.com/SayHelloImpl/sayHelloRequest", output = "http://webservice.charjay.com/SayHelloImpl/sayHelloResponse")
     public String sayHello(
-        @WebParam(name = "arg0", targetNamespace = "")
-        String arg0);
+            @WebParam(name = "arg0", targetNamespace = "")
+                    String arg0);
 
 }

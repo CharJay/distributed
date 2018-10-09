@@ -17,7 +17,7 @@ import javax.xml.ws.WebServiceFeature;
  * Generated source version: 2.2
  * 
  */
-@WebServiceClient(name = "SayHelloImplService", targetNamespace = "http://webservice.charjay.com/", wsdlLocation = "http://localhost:8080/charjay/hello?wsdl")
+@WebServiceClient(name = "SayHelloImplService", targetNamespace = "http://webservice.charjay.com/", wsdlLocation = "http://localhost:8090/charjay/hello?wsdl")
 public class SayHelloImplService
     extends Service
 {
@@ -30,7 +30,7 @@ public class SayHelloImplService
         URL url = null;
         WebServiceException e = null;
         try {
-            url = new URL("http://localhost:8080/charjay/hello?wsdl");
+            url = new URL("http://localhost:8090/charjay/hello?wsdl");
         } catch (MalformedURLException ex) {
             e = new WebServiceException(ex);
         }
@@ -75,7 +75,7 @@ public class SayHelloImplService
     /**
      * 
      * @param features
-     *     A list of {@link javax.xml.ws.WebServiceFeature} to configure on the proxy.  Supported features not in the <code>features</code> parameter will have their default values.
+     *     A list of {@link WebServiceFeature} to configure on the proxy.  Supported features not in the <code>features</code> parameter will have their default values.
      * @return
      *     returns SayHelloImpl
      */
