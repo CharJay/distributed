@@ -20,8 +20,7 @@ public class Service {
         config.setMaxWaitMillis(1000 * 100);
         // 在borrow一个jedis实例时，是否需要验证，若为true，则所有jedis实例均是可用的
         config.setTestOnBorrow(true);
-//        pool = new JedisPool(config, "192.168.98.165", 6379, 3000,"123456");
-        pool = new JedisPool(config, "116.62.11.8", 12339, 3000,"lzzLOVEqsd007");
+        pool = new JedisPool(config, "192.168.98.165", 6379, 10000,"123456");
     }
 
     public void seckill() {
