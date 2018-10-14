@@ -1,4 +1,4 @@
-package com.charjay;
+package com.charjay.lock;
 
 public class ThreadA extends Thread {
     private Service service;

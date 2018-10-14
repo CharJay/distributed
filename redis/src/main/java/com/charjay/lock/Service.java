@@ -1,4 +1,4 @@
-package com.charjay;
+package com.charjay.lock;
 
 import redis.clients.jedis.JedisPool;
 import redis.clients.jedis.JedisPoolConfig;
