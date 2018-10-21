@@ -1,4 +1,4 @@
-package com.charjay;
+package com.charjay.lua;
 
 import com.charjay.lock.DistributedLock;
 import redis.clients.jedis.Jedis;

@@ -17,6 +17,7 @@
       <module>netty-rpc</module>
       <module>activemq</module>
       <module>redis</module>
+      <module>mongodb</module>
   </modules>
   <packaging>pom</packaging>
 

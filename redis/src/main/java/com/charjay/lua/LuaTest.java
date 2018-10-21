@@ -1,6 +1,5 @@
 package com.charjay.lua;
 
-import com.charjay.RedisManger;
 import redis.clients.jedis.Jedis;
 
 import java.util.ArrayList;
